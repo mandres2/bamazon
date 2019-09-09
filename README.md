@@ -56,7 +56,7 @@ The primary motive was to solidify my understandings of the foundational concept
 <b>This project is licensed under the MIT License</b>
 
 ## Acknowledgments
-*TAs - Catherine Pham, and Trae Shanks*
+*TA - Catherine Pham
 <br>
 *Teacher - Arron Linton*
 

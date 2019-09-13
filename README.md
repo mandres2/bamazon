@@ -80,9 +80,10 @@ The Add New Product option allows the user to enter details about a new product 
 <b>This project is licensed under the MIT License</b>
 
 ## Acknowledgments
-*TAs - Catherine Pham, Benjamin Vaagen
+* <b>TAs</b>- Catherine Pham, Benjamin Vaagen
 <br>
-*Teacher - Arron Linton*
+
+* <b>Teacher</b>- Arron Linton
 
 ## Progress Log:
 <br>

@@ -1,3 +1,15 @@
+// Make the request to import the following npm packages:
+const mysql = require("mysql");
+const inquirer = require("inquirer");
+
+let connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "password",
+    database: "bamazon_DB"
+});
+
 connection.connect(function (err) {
     if (err) throw err;
     displayItemsForSale();
@@ -9,7 +21,7 @@ function displayItemsForSale() {
         function (err, res) {
             if (err) throw err;
             console.log("Id \t Name \t Price \t Quantity\n");
-            for (var i = 0; i < res.length; i++) {
+            for (let i = 0; i < res.length; i++) {
                 console.log(
                     res[i].item_id +
                     "\t" +
@@ -34,7 +46,7 @@ function promptQuestions(length) {
             message: "Enter the Item Id of the product you would like to buy? 'Press C to Exit'"
         }])
         .then(function (answer) {
-            var purchaseItemId = answer.purchase_item_id;
+            let purchaseItemId = answer.purchase_item_id;
             if (purchaseItemId.toUpperCase() === "C") {
                 process.exit();
             }
@@ -68,7 +80,7 @@ function promptQuestions(length) {
                                 if (answer.quantity > res[0].stock_quantity) {
                                     console.log("Insufficient quantity.");
                                 } else {
-                                    var updateQuantity =
+                                    let updateQuantity =
                                         res[0].stock_quantity - parseFloat(answer.quantity);
                                     connection.query(
                                         "UPDATE products SET ? WHERE ?",
@@ -83,7 +95,7 @@ function promptQuestions(length) {
                                             if (err) throw err;
                                         }
                                     );
-                                    var totalCost = res[0].price * answer.quantity;
+                                    let totalCost = res[0].price * answer.quantity;
                                     console.log(
                                         "The total price of the purchase : " + totalCost.toFixed(2)
                                     );

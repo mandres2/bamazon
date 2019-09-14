@@ -15,6 +15,12 @@ The primary motive was to solidify my understandings of the foundational concept
 <br>
 :black_small_square: MySQL (Version 8.0.12 or higher)
 
+## MySQL Database
+In order to run this application, you should have the MySQL database already set up on your machine. If you don't, visit the MySQL installation page to install the version you need for your operating system. Once you have MySQL isntalled, you will be able to create the Bamazon database and the products table with the SQL code found in Bamazon.sql. Run this code inside your MySQL client like Sequel Pro to populate the database, then you will be ready to proceed with running the Bamazon customer and manager interfaces.
+
+### MySQL Screenshot of bamazon Database
+![alt text](https://github.com/mandres2/bamazon/blob/master/images/GIFS_PNGs/bamazon.sql.png)
+
 ## Customer Interface
 The customer interface allows the user to view the current inventory of store items: item IDs, descriptions, department in which the item is located and price. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order.
 
@@ -24,6 +30,9 @@ The customer interface allows the user to view the current inventory of store it
 * cd bamazon
 * npm init -y
 * node customer.js
+
+### Customer Demo:
+![alt text](https://github.com/mandres2/bamazon/blob/master/images/GIFS_PNGs/customer_sample.gif)
 
 ## Manager Interface
 The manager interface presents a list of four options, as below:
@@ -48,11 +57,15 @@ The Add New Product option allows the user to enter details about a new product 
 * npm init -y
 * node manager.js
 
+### Manager Demo:
+![alt text](https://github.com/mandres2/bamazon/blob/master/images/GIFS_PNGs/manager.gif)
+
+
 ## Deployment
 
 <b>'git push' the files into GitHub Profile and link repository to BCS.</b>
 
-## Built With:
+## Built With
 
 <br>
 :black_small_square: Microsoft Studios Visual Code (v1.37.1)
@@ -69,7 +82,7 @@ The Add New Product option allows the user to enter details about a new product 
 ## npm Packages Used:
 :black_small_square: inquirer v7.0.0
 <br>
-:black_small_square: mysql
+:black_small_square: mysql v2.17.1
 
 ## Author
 

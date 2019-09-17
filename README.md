@@ -29,6 +29,8 @@ The customer interface allows the user to view the current inventory of store it
 * git clone git@github.com:mandres2/bamazon.git
 * cd bamazon
 * npm init -y
+* npm install 'mysql'
+* npm install 'inquirer'
 * node customer.js
 
 ### Customer Demo:
@@ -55,6 +57,8 @@ The Add New Product option allows the user to enter details about a new product 
 * git clone git@github.com:mandres2/bamazon.git
 * cd bamazon
 * npm init -y
+* npm install 'mysql'
+* npm install 'inquirer;
 * node manager.js
 
 ### Manager Demo:

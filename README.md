@@ -57,6 +57,7 @@ The Add New Product option allows the user to enter details about a new product 
 * git clone git@github.com:mandres2/bamazon.git
 * cd bamazon
 * npm init -y
+* npm install
 * npm install 'mysql'
 * npm install 'inquirer;
 * node manager.js
